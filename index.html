@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="base.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>DaniCassani</title>
@@ -70,30 +71,60 @@
 
 <body>
 
-    <h1 id="main-title">Welcome to my Resume Web!</h1>
+    <h1 id="main-title">Not a Front End Developer...</h1>
     <!-- My linkedin photo -->
     <div class="container my-5">
         <div class="row">
-            
             <div class="col-md-3" id="profile-photo">
                 <img id="main-photo" src="https://media.licdn.com/dms/image/D4D03AQFqMrcrnez76g/profile-displayphoto-shrink_800_800/0/1723490437024?e=1729123200&v=beta&t=HO3TkIEs-57VovvHpdxs5eaFKthK9MW1JNqQ5uuv-CA" alt="linkedin photo" width="200" height="200">
             </div>
             <div class="col-md-8">
                 <br>
-                <br>
-                <br>
                 <p>I am dedicated to continuous learning and staying updated with the latest advancements in my field, ensuring that I am equipped to tackle complex challenges in an ever-evolving technological landscape. I'm  looking forward to using all my lastest skills on upcoming challenges and projects.</p>
             </div>
         </div>
-        <div class="row text-center mt-4">
+        <div class="row">
             <div class="col-md-3">
                 <a class="btn btn-outline-primary home-buttons" href="CV_DanielDuranCassani.pdf" target="_blank"><img src="images/download_icon.png" class="base-logo">Download my resume!</a>
                 <a class="btn btn-outline-success home-buttons" href="mailto:durancassanidaniel@gmail.com" target="_blank"><img src="images/email_icon.png" class="base-logo"> Send me an email!</a>
             </div>
         </div>
-    </div>    
+        <br>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <div class="list-group" id="myList" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#python" role="tab">Python</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#cpp" role="tab">C++</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#django" role="tab">Django</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#docker" role="tab">Docker</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#linux" role="tab">Linux</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#yocto-embedded" role="tab">Yocto Embedded</a>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="python" role="tabpanel">Proficient in Python, with experience in developing scalable applications and automation scripts. Skilled in leveraging Python’s extensive libraries and frameworks for data analysis, machine learning, and backend development.</div>
+                    <div class="tab-pane" id="cpp" role="tabpanel">Experienced in C++ programming, with a strong understanding of object-oriented design and system-level programming. Adept at developing high-performance applications, optimizing code, and working with embedded systems.</div>
+                    <div class="tab-pane" id="django" role="tabpanel">Skilled in Django web framework for building robust, secure, and scalable web applications. Expertise in utilizing Django’s ORM, views, and templating engine to create full-stack solutions.</div>
+                    <div class="tab-pane" id="docker" role="tabpanel">Proficient in Docker for containerization and deployment of applications in isolated environments. Experienced in creating and managing Docker images, containers, and orchestration using Docker Compose.</div>
+                    <div class="tab-pane" id="linux" role="tabpanel">Extensive experience with Linux environments, including system administration, shell scripting, and network configuration. Comfortable working in command-line interfaces, managing packages, and configuring services.</div>
+                    <div class="tab-pane" id="yocto-embedded" role="tabpanel">Experienced in Yocto Project for building custom Linux distributions for embedded systems.</div>
+                </div>
+            </div>
+        </div>
+        <!-- List group -->
+        <br>
+    </div>   
     <div class="container-sm">
         <p class="info">This web page is hosted in my <a href="https://github.com/danicassani" target="_blank">GitHub</a>.</p>
     </div>
 </body>
+<script>
+    $('#myList a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+</script>
 </html>
