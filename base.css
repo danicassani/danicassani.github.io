@@ -4,8 +4,8 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    color: #005871;
-    text-shadow: 3px 3px 5px #00293b;
+    color: #343434;
+    text-shadow: 3px 3px 5px #141414;
     letter-spacing: 0.1em;
     line-height: 1.5em;
     margin-bottom: 0.5em;
@@ -37,7 +37,8 @@ body{
 }
 
 .base-logo{
-    vertical-align: baseline;
+    vertical-align:text-top;
+    width: 20px;
 }
 
 #main-photo{
@@ -61,4 +62,15 @@ body{
     color: rgb(91, 91, 91);
     font-size: 0.8em;
     text-align: end;
+}
+
+.aligned-image {
+    position: absolute;
+    bottom: 0;
+}
+
+.home-buttons{
+    margin-bottom: 1em;
+    margin-left: 2.5em;
+    width: 100%;
 }
