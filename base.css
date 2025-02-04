@@ -22,9 +22,11 @@ body{
 }
 
 .nav-thing{
-    padding: 0.5em 3em;
+    /* padding: 0.5em em; */
     font-size: larger;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* display: flex; */
+    align-items: center; /* Alinea los elementos verticalmente */
 }
 
 .active{
@@ -41,6 +43,12 @@ body{
     width: 20px;
 }
 
+#profile-photo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #main-photo{
     margin: 20px;
     border-radius: 50%;
@@ -52,10 +60,6 @@ body{
     padding: 2em;
     background-color: #dde7fd;
     box-shadow: 4px 4px 8px #32456f;
-}
-
-#profile-photo{
-    margin-left: 2.5em;
 }
 
 .info{
@@ -71,6 +75,6 @@ body{
 
 .home-buttons{
     margin-bottom: 1em;
-    margin-left: 2.5em;
+    /* margin-left: .5em; */
     width: 100%;
 }
