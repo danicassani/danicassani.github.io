@@ -1,5 +1,5 @@
 #main-title{
-    font-size: 2.5em;
+    font-size: 7.5vw;
     font-weight: bold;
     text-align: center;
     margin: 0;
@@ -10,7 +10,23 @@
     line-height: 1.5em;
     margin-bottom: 0.5em;
 }
-
+#quasimain-title{
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #343434;
+    text-shadow: 3px 3px 5px #141414;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+}
+#alvarito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .loscaidos{
     animation: slideDown 10s ease-in-out infinite;
 }
@@ -36,14 +52,23 @@
     border: 1px solid #ccc;
     margin: 20px;
 }
-ul {
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+} */
 #ticpasswd{
     display: none;
     overflow: hidden;
+    width: auto;
+}
+.my-img{
+    height: auto;
+    width: 100%;
+}
+#danichill{
+    width: 20%;
+    min-width: 120px;
 }
 #dias-gymknana{
 
@@ -113,8 +138,12 @@ body{
     align-items: center;
 }
 .center {
-    display: block;
+    display: flex;
     margin: 0 auto;
+}
+.center.resize{
+    width:auto; /* you can use % */
+    height: auto;
 }
 #main-photo{
     margin: 20px;
