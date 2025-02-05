@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" id="dev-name" href="index_real.html"><img src="favicon.ico"
                     style="vertical-align:sub;" height="25"> DaniCassani</a>
@@ -45,13 +45,14 @@
     </nav>
     <br>
     <div class="container carta">
-        <h1 id="main-title">ENHORABUENA!</h1>
+        <h1 id="main-title">¡ENHORABUENA!</h1>
         <h3 class="secondary-title">Habéis encontrado TODOS LOS PATOS!</h3>
         <br>
         <h3 class="secondary-title">🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆</h3>
         <h1 id="dias-gymknana"></h1>
         <br>
-        <button class="btn btn-danger collapsible center">Y como premio por haber superado la gymkhana, aquí os dejo la contraseña de TIC:</button>
+        <h4 class="secondary-title">Y como premio por haber superado la gymkhana, aquí os dejo... </h4>
+        <button class="btn btn-danger collapsible center"><h2>La contraseña de TIC:</h2></button>
         
         <div id="ticpasswd">
             <br>
@@ -121,8 +122,8 @@
 </body>
 <script>
     const items = [
-        "Adri", "Xermán", "Sergio", "AlejandroGira", "Rubén",
-        "Juan", "Jesús", "Jorge", "Jose"
+        "Adri", "Jose", "Xermán", "Jesús", "Sergio",  
+        "AlejandroG", "Jorge", "Rubén", "Juan" 
     ];
 
     const listContainer = document.getElementById('infinite-list');
@@ -158,7 +159,7 @@
     populateList();
 </script>
 <script>
-    const fechaInicio = new Date('2025-02-06');
+    const fechaInicio = new Date('2025-02-05');
 
     const fechaActual = new Date();
 
