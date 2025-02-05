@@ -11,6 +11,73 @@
     margin-bottom: 0.5em;
 }
 
+.loscaidos{
+    animation: slideDown 10s ease-in-out infinite;
+}
+
+@keyframes slideDown {
+    0% {
+      top: -50px;
+      opacity: 0;
+    }
+    50% {
+      top: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 50px;
+      opacity: 0;
+    }
+  }
+  .scroll-container {
+    width: 200px;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#ticpasswd{
+    display: none;
+    overflow: hidden;
+}
+.carta{
+    width: 50%;
+}
+#dias-gymknana{
+
+font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff; /* Fondo claro (azul suave) */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+#dias-gymknana:hover {
+  transform: scale(1.2); /* Efecto de hover para agrandar el texto */
+}
+.secondary-title{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #343434;
+    /* letter-spacing: 0.1em; */
+    line-height: 1.5em;
+    margin-bottom: 0.5em;   
+}
 body{
     background-color: #edf2fe;
     color: #000000;
@@ -26,7 +93,7 @@ body{
     font-size: larger;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* display: flex; */
-    align-items: center; /* Alinea los elementos verticalmente */
+    align-items: center;
 }
 
 .active{
@@ -48,7 +115,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.center {
+    display: block;
+    margin: 0 auto;
+}
 #main-photo{
     margin: 20px;
     border-radius: 50%;
