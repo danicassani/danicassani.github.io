@@ -51,39 +51,40 @@
         <h3 class="secondary-title">🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆</h3>
         <br>
         <h4 class="secondary-title">Y como premio por haber superado la gymkhana, aquí os dejo... </h4>
-        <button class="btn btn-danger collapsible center"><h2>La contraseña de TIC:</h2></button>
-        
+        <button class="btn btn-danger collapsible center">
+            <h2>La contraseña de TIC:</h2>
+        </button>
+
         <div id="ticpasswd">
             <br>
             <img class="center" src="circlegamejpeg.jpeg">
             <br>
             <div id="alvarito">
-                <!-- <p>Os falta calle</p> -->
                 <p>¿De verdad os pensabais que iba a traicionar así a mi querido Alvarito? </p>
             </div>
-            
+
             <br>
             <br>
             <h1 id="quasimain-title">Carta de despedida a mis compis</h1>
-            
-            <p>Hola, chavalucos! Espero que os hayáis mantenido unidos y hayáis llegado juntos hasta aquí. Esté donde esté en
-                este momento, ya os estoy echando de menos. </p>
-                <br>
-                <img class="my-img" src="images/1.png" alt="hola">
-                <br>
-                <br>
-                <p>Hice esta gymkhana con la intención de que tardarais un poco más en echarme de menos, 
-                    pero finalmente decidí disfrutarla con vosotros y dejaros un bonito recuerdo antes de marcharme. 
-                    Sois unos cracks, lo habéis resuelto todo en tiempo récord!</p>
-                <p>Sé que me conocéis como el quejica que soy, pero hoy voy a apartar esa costumbre y me voy a centrar en
-                    lo importante.
-                    Sois un equipo maravilloso que siempre voy a guardar en mi corazón. Me habéis regalado momentos inolvidables. Y no
-                    es un decir.
-                </p>
-                <br>
-                <img class="my-img" src="images/2.png" alt="hola">
-                <br>
-                <br>
+
+            <p>Hola, chavalucos! Espero que os hayáis mantenido unidos y hayáis llegado juntos hasta aquí. Esté donde
+                esté en
+                este momento, ya os estoy echando de menos.
+            </p>
+            <img class="my-img" src="images/1.png" alt="hola">
+            <p>
+                Hice esta gymkhana con la intención de que tardarais un poco más en echarme de menos,
+                pero finalmente decidí disfrutarla con vosotros y dejaros un bonito recuerdo antes de marcharme.
+                Sois unos cracks, lo habéis resuelto todo en tiempo récord!
+            </p>
+            <p>
+                Sé que me conocéis como el quejica que soy, pero hoy voy a apartar esa costumbre y me voy a centrar en
+                lo importante.
+                Sois un equipo maravilloso que siempre voy a guardar en mi corazón. Me habéis regalado momentos
+                inolvidables. Y no
+                es un decir.
+            </p>
+            <img class="my-img" src="images/2.png" alt="hola">
             <ul>
                 <li>No voy a olvidar las conversaciones random de Raúl y JaimeC,</li>
                 <li>Ni la complicidad que llegué a tener con AndreaL y JaimeR,</li>
@@ -104,16 +105,18 @@
                 Muchos me habéis enseñado a ser mejor profesional, pero todos me habéis hecho crecer como persona.
                 Os lo agradezco de veras.
             </p>
-            
             <img class="my-img" src="images/4.png" alt="hola">
-            <p>Habéis sido la única y principal razón por la que miré atrás con duda antes de tomar la decisión de
-                marchar. Os aseguro que no fue fácil tomarla. Pero llegó mi hora y me tocaba volar.</p>
+            <p>
+                Habéis sido la única y principal razón por la que miré atrás con duda antes de tomar la decisión de
+                marchar. Os aseguro que no fue fácil tomarla. Pero llegó mi hora y me tocaba volar.
+            </p>
             <img class="my-img" src="images/3.png" alt="hola">
-            <br>
-                
-            <p>Especial mención a mi sucesora, Andrea (la buena). Siento las transferencias interminables, espero que no fueran
-                demasiado densas. Sé que me vas a superar en todo lo que yo hacía.  
-                Recuerda que no estás sola y confía en ti como yo confío en ti.</p>
+
+            <p>Especial mención a mi sucesora, Andrea (la buena). Siento las transferencias interminables, espero que no
+                fueran
+                demasiado densas. Sé que me vas a superar en todo lo que yo hacía.
+                Recuerda que no estás sola y confía en ti como yo confío en ti.
+            </p>
 
             <p>No me quiero despedir sin hacer una breve mención a los caídos en combate desde que llegué:</p>
             <div class="scroll-container" id="scroll-container" style="width:90%">
@@ -128,15 +131,67 @@
             <p>Un abrazo a todos.</p>
             <img id="danichill" src="images/danichill.jpeg" alt="hola"> </img>
             <br>
-            <img src="firma.jpg" style="vertical-align:sub;" height="75"> </img>
+            <img src="firma.jpg" style="vertical-align:sub;" width="20%"> </img>
             <br>
-            <sub>PD: Si has contado los patos del título para ver que efectivamente había 15, siempre en mi equipo, compi 💙</sub>
+            <sub>
+                PD: Si has contado los patos del título para ver que efectivamente había 15, siempre en mi equipo,
+                compi 💙
+            </sub>
+            <br>
+            <sub>
+                ¿Cómo era? Arriba arriba, abajo abajo, ...
+            </sub>
         </div>
     </div>
+
+    <script>
+        const konamiCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
+        let currentInput = [];
+
+        const image = document.createElement('img');
+        image.src = 'images/see_you_soon.png'; // Reemplaza con la ruta correcta de tu imagen
+        image.style.position = 'absolute';
+        image.style.left = '50%';
+        image.style.transform = 'translateX(-50%)';
+        image.style.display = 'none';
+        image.style.transition = 'top 2s';
+        image.width = 300; // Ajusta el tamaño según necesites
+        document.body.appendChild(image);
+
+        document.addEventListener('keydown', (event) => {
+            currentInput.push(event.key);
+
+            // Si el array de entrada es más largo que el código, eliminar el primer elemento
+            if (currentInput.length > konamiCode.length) {
+                currentInput.shift();
+            }
+
+            // Verificar si el código ingresado es correcto
+            if (currentInput.join('') === konamiCode.join('')) {
+                showImage();
+            }
+        });
+
+        function showImage() {
+            // Mover la imagen desde abajo
+            image.style.display = 'block';
+            image.style.top = '700%';
+
+            // Mover la imagen hacia el centro
+            setTimeout(() => {
+                image.style.top = '50%';
+            }, 10); // Esperar un poco para que la transición se active
+
+            // Ocultar la imagen después de 15 segundos
+            setTimeout(() => {
+                image.style.display = 'none';
+            }, 15000);
+        }
+    </script>
 </body>
 <script>
     const items = [
-        "Adri", "Jose", "Xermán", "Jesús", "Sergio",  
+        "Adri", "Jose", "Xermán", "Jesús", "Sergio",
         "AlejandroG", "Jorge", "Rubén", "Juan", "Esther"
     ];
 
