@@ -7,6 +7,13 @@
     --bg-light: #edf2fe;
 }
 
+html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
     background-color: var(--bg-light);
     color: var(--text-color);
@@ -14,6 +21,15 @@ body {
     font-size: 1.05rem;
     line-height: 1.6;
     margin: 0;
+}
+
+input,
+textarea,
+select {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 .nav-thing {
