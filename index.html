@@ -1,247 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="base.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>DaniCassani</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" id="dev-name" href="index_real.html"><img src="favicon.ico"
-                    style="vertical-align:sub;" height="25"> DaniCassani</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link nav-thing active" aria-current="page" href="index_real.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link nav-thing" href="CV_DanielDuranCassani.pdf" target="_blank">El CV que me sacó
-                            de Indra</a>
-                    </li>
-                </ul>
-                <span class="navbar-text" style="font-style: italic;">
-                    Engineer
-                </span>
-            </div>
-        </div>
-    </nav>
-    <br>
-    <div class="container carta">
-        <h1 id="main-title">¡ENHORABUENA!</h1>
-        <h3 class="secondary-title">Habéis encontrado TODOS LOS PATOS!</h3>
-        <br>
-        <h3 class="secondary-title">🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆</h3>
-        <br>
-        <h4 class="secondary-title">Y como premio por haber superado la gymkhana, aquí os dejo... </h4>
-        <button class="btn btn-danger collapsible center">
-            <h2>La contraseña de TIC:</h2>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" id="dev-name" href="index.html"><img src="favicon.ico" style="vertical-align:sub;" height="25"> DaniCassani</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div id="ticpasswd">
-            <br>
-            <img class="center" src="circlegamejpeg.jpeg">
-            <br>
-            <div id="alvarito">
-                <p>¿De verdad os pensabais que iba a traicionar así a mi querido Alvarito? </p>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-thing active" aria-current="page" href="index.html"
+                    >Home</a
+                    >
+                </li>
+                
+                <!-- <li class="nav-item">
+                    <a class="nav-link nav-thing" href="#"
+                    >Projects</a
+                    >
+                </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link nav-thing" href="experience.html"
+                    >Experience</a
+                    >
+                </li>
+                
+                <li class="nav-item">
+                    <!-- <a class="nav-link nav-thing" href="https://www.linkedin.com/in/daniel-duran-cassani/" target="_blank" >-->
+                        <!-- <a href="#" title="LinkedIn" class="nav-link btn btn-linkedin btn-lg"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a> -->
+                        <a href="#" title="LinkedIn" class="nav-link nav-thing btn-linkedin btn-lg"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                    <!-- <img 
+                    src="images/linkedin_logo.png" class= "base-logo" alt="linkedin" height="25" 
+                    >LinkedIn</a> -->
+                </li>
 
-            <br>
-            <br>
-            <h1 id="quasimain-title">Carta de despedida a mis compis</h1>
-
-            <p>Hola, chavalucos! Espero que os hayáis mantenido unidos y hayáis llegado juntos hasta aquí. Esté donde
-                esté en
-                este momento, ya os estoy echando de menos.
-            </p>
-            <img class="my-img" src="images/1.png" alt="hola">
-            <p>
-                Hice esta gymkhana con la intención de que tardarais un poco más en echarme de menos,
-                pero finalmente decidí disfrutarla con vosotros y dejaros un bonito recuerdo antes de marcharme.
-                Sois unos cracks, lo habéis resuelto todo en tiempo récord!
-            </p>
-            <p>
-                Sé que me conocéis como el quejica que soy, pero hoy voy a apartar esa costumbre y me voy a centrar en
-                lo importante.
-                Sois un equipo maravilloso que siempre voy a guardar en mi corazón. Me habéis regalado momentos
-                inolvidables. Y no
-                es un decir.
-            </p>
-            <img class="my-img" src="images/2.png" alt="hola">
-            <ul>
-                <li>No voy a olvidar las conversaciones random de Raúl y JaimeC,</li>
-                <li>Ni la complicidad que llegué a tener con AndreaL y JaimeR,</li>
-                <li>Mucho menos al Luisdi pluriempleado y acumulando cajas,</li>
-                <li>Ni podré olvidar a AndreaC y sus mil y una voces,</li>
-                <li>Tampoco al Álvaro imitando el andaluz, y Raúl intentando no soltarle una ostia,</li>
-                <li>El "Jagi is not here" de Eugenio tampoco se me va a borrar,</li>
-                <li>Ahmed y sus asedios a mi mesa, Paula riéndose de nuestras faltadas, </li>
-                <li>El 🫱🫳</li>
-                <li>A los masones decidiendo sobre nuestro futuro desde las sombras,</li>
-                <li>Incluso a Paco diciendo "bueno, bueno, todavía no nos chupemos las pollas"</li>
+                <li class="nav-item">
+                    <a class="nav-link nav-thing" href="CV_DanielDuranCassani.pdf" target="_blank">Resume</a>
+                </li>
             </ul>
-            <p>
-                Os quiero dar las gracias a muchos también por haber aguantado mis rabietas y por haber sido pacientes
-                con mis intensidades.
-                Por haberme hecho de paraguas y haber arrimado el hombro cuando ha hecho falta.
-                Por haber sido mis cómplices y por haberme acompañado en este camino.
-                Muchos me habéis enseñado a ser mejor profesional, pero todos me habéis hecho crecer como persona.
-                Os lo agradezco de veras.
-            </p>
-            <img class="my-img" src="images/4.png" alt="hola">
-            <p>
-                Habéis sido la única y principal razón por la que miré atrás con duda antes de tomar la decisión de
-                marchar. Os aseguro que no fue fácil tomarla. Pero llegó mi hora y me tocaba volar.
-            </p>
-            <img class="my-img" src="images/3.png" alt="hola">
-
-            <p>Especial mención a mi sucesora, Andrea (la buena). Siento las transferencias interminables, espero que no
-                fueran
-                demasiado densas. Sé que me vas a superar en todo lo que yo hacía.
-                Recuerda que no estás sola y confía en ti como yo confío en ti.
-            </p>
-
-            <p>No me quiero despedir sin hacer una breve mención a los caídos en combate desde que llegué:</p>
-            <div class="scroll-container" id="scroll-container" style="width:90%">
-                <ul id="infinite-list">
-                    <!-- Los elementos se generan dinámicamente -->
-                </ul>
-            </div>
-            <div class="overflow-auto">
-                <p>Y por último, se despide un servidor.</p>
-            </div>
-            <p>Os quiero mucho, chavales!</p>
-            <p>Un abrazo a todos.</p>
-            <img id="danichill" src="images/danichill.jpeg" alt="hola"> </img>
-            <br>
-            <img src="firma.jpg" style="vertical-align:sub;" width="20%"> </img>
-            <br>
-            <sub>
-                PD: Si has contado los patos del título para ver que efectivamente había 15, siempre en mi equipo,
-                compi 💙
-            </sub>
-            <br>
-            <sub>
-                ¿Cómo era? Arriba arriba, abajo abajo, ...
-            </sub>
+            <span class="navbar-text" style="font-style: italic;">
+            Junior Deveoloper
+            </span>
         </div>
     </div>
+</nav>
 
-    <script>
-        const konamiCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
-        let currentInput = [];
+<body>
 
-        const image = document.createElement('img');
-        image.src = 'images/see_you_soon.png'; // Reemplaza con la ruta correcta de tu imagen
-        image.style.position = 'absolute';
-        image.style.left = '50%';
-        image.style.transform = 'translateX(-50%)';
-        image.style.display = 'none';
-        image.style.transition = 'top 2s';
-        image.width = 300; // Ajusta el tamaño según necesites
-        document.body.appendChild(image);
-
-        document.addEventListener('keydown', (event) => {
-            currentInput.push(event.key);
-
-            // Si el array de entrada es más largo que el código, eliminar el primer elemento
-            if (currentInput.length > konamiCode.length) {
-                currentInput.shift();
-            }
-
-            // Verificar si el código ingresado es correcto
-            if (currentInput.join('') === konamiCode.join('')) {
-                showImage();
-            }
-        });
-
-        function showImage() {
-            // Mover la imagen desde abajo
-            image.style.display = 'block';
-            image.style.top = '700%';
-
-            // Mover la imagen hacia el centro
-            setTimeout(() => {
-                image.style.top = '50%';
-            }, 10); // Esperar un poco para que la transición se active
-
-            // Ocultar la imagen después de 15 segundos
-            setTimeout(() => {
-                image.style.display = 'none';
-            }, 15000);
-        }
-    </script>
+    <h1 id="main-title">Not a Front End Developer...</h1>
+    <!-- My linkedin photo -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-3" id="profile-photo">
+                <img id="main-photo" src="images/perfil.png" alt="linkedin photo" width="200" height="200">
+            </div>
+            <div class="col-md-8">
+                <br>
+                <p>I am dedicated to continuous learning and staying updated with the latest advancements in my field, ensuring that I am equipped to tackle complex challenges in an ever-evolving technological landscape. I'm  looking forward to using all my lastest skills on upcoming challenges and projects.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a class="btn btn-outline-primary home-buttons" href="CV_DanielDuranCassani.pdf" target="_blank"><img src="images/download_icon.png" class="base-logo">Download my resume!</a>
+                <a class="btn btn-outline-success home-buttons" href="mailto:durancassanidaniel@gmail.com" target="_blank"><img src="images/email_icon.png" class="base-logo"> Send me an email!</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <div class="list-group" id="myList" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#python" role="tab">Python</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#cpp" role="tab">C++</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#django" role="tab">Django</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#docker" role="tab">Docker</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#linux" role="tab">Linux</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#yocto-embedded" role="tab">Yocto Embedded</a>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="python" role="tabpanel">Proficient in Python, with experience in developing scalable applications and automation scripts. Skilled in leveraging Python’s extensive libraries and frameworks for data analysis, machine learning, and backend development.</div>
+                    <div class="tab-pane" id="cpp" role="tabpanel">Experienced in C++ programming, with a strong understanding of object-oriented design and system-level programming. Adept at developing high-performance applications, optimizing code, and working with embedded systems.</div>
+                    <div class="tab-pane" id="django" role="tabpanel">Skilled in Django web framework for building robust, secure, and scalable web applications. Expertise in utilizing Django’s ORM, views, and templating engine to create full-stack solutions.</div>
+                    <div class="tab-pane" id="docker" role="tabpanel">Proficient in Docker for containerization and deployment of applications in isolated environments. Experienced in creating and managing Docker images, containers, and orchestration using Docker Compose.</div>
+                    <div class="tab-pane" id="linux" role="tabpanel">Extensive experience with Linux environments, including system administration, shell scripting, and network configuration. Comfortable working in command-line interfaces, managing packages, and configuring services.</div>
+                    <div class="tab-pane" id="yocto-embedded" role="tabpanel">Experienced in Yocto Project for building custom Linux distributions for embedded systems.</div>
+                </div>
+            </div>
+        </div>
+        <!-- List group -->
+        <br>
+    </div>   
+    <div class="container-sm">
+        <p class="info">This web page is hosted in my <a href="https://github.com/danicassani" target="_blank">GitHub</a>.</p>
+    </div>
 </body>
 <script>
-    const items = [
-        "Adri", "Jose", "Xermán", "Jesús", "Sergio",
-        "AlejandroG", "Jorge", "Rubén", "Juan", "Esther"
-    ];
-
-    const listContainer = document.getElementById('infinite-list');
-    const scrollContainer = document.getElementById('scroll-container');
-
-    // Función para crear la lista inicial
-    function populateList() {
-        for (let i = 0; i < 9; i++) {
-            const li = document.createElement('li');
-            li.textContent = items[i];
-            listContainer.appendChild(li);
-        }
-    }
-
-    // Crear los primeros elementos
-    populateList();
-
-    // Función para hacer scroll infinito
-    function infiniteScroll() {
-        // Si el scroll ha llegado al final, mover la primera parte de la lista al final
-        if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight) {
-            for (let i = 0; i < 3; i++) {
-                const firstItem = listContainer.querySelector('li');
-                listContainer.appendChild(firstItem); // Mover el primer elemento al final
-            }
-        }
-    }
-
-    // Agregar el evento de scroll
-    scrollContainer.addEventListener('scroll', infiniteScroll);
-
-    // Rellenar la lista con los primeros elementos para empezar
-    populateList();
+    $('#myList a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
 </script>
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-    }
-</script>
-
 </html>
