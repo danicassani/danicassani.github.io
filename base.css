@@ -1,16 +1,153 @@
-#main-title {
-    font-size: 7.5vw;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: #343434;
-    text-shadow: 3px 3px 5px #141414;
-    letter-spacing: 0.1em;
-    line-height: 1.5em;
-    margin-bottom: 0.5em;
+:root {
+    --primary-color: #0d6efd;
+    --accent-color: #91c8fe;
+    --dark-color: #141b2d;
+    --text-color: #1f2633;
+    --muted-color: #6c7a93;
+    --bg-light: #edf2fe;
 }
 
+body {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.nav-thing {
+    font-size: 1rem;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.hero {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.85), rgba(20, 27, 45, 0.95));
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent 60%);
+    pointer-events: none;
+}
+
+.hero-subtitle {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 8px rgba(10, 15, 35, 0.45);
+}
+
+.hero-description {
+    font-size: 1.05rem;
+    max-width: 34rem;
+    margin-bottom: 2rem;
+}
+
+.cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.profile-wrapper {
+    max-width: 320px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    border-radius: 50%;
+    padding: 1.5rem;
+    box-shadow: 0 18px 50px rgba(12, 18, 46, 0.35);
+}
+
+#main-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 30px rgba(12, 18, 46, 0.35);
+}
+
+.section-heading {
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section-description {
+    color: var(--muted-color);
+    max-width: 38rem;
+}
+
+.skills {
+    background-color: #f8fbff;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    box-shadow: 0 15px 35px rgba(23, 32, 58, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(23, 32, 58, 0.18);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+}
+
+.skill-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.skill-text {
+    color: var(--muted-color);
+    margin: 0;
+}
+
+.contact-cta {
+    background: linear-gradient(135deg, rgba(145, 200, 254, 0.25), rgba(13, 110, 253, 0.15));
+}
+
+.site-footer {
+    background-color: #ffffff;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.info {
+    color: var(--muted-color);
+    font-size: 0.9rem;
+    text-align: end;
+}
+
+/* Existing utility classes preserved for other pages */
 #quasimain-title {
     font-size: 5vw;
     font-weight: bold;
@@ -85,77 +222,14 @@
     margin: 0;
     padding: 0;
     color: #343434;
-    /* letter-spacing: 0.1em; */
     line-height: 1.5em;
     margin-bottom: 0.5em;
-}
-
-body {
-    background-color: #edf2fe;
-    color: #000000;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-thing {
-    /* padding: 0.5em em; */
-    font-size: larger;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* display: flex; */
-    align-items: center;
-}
-
-.active {
-    font-weight: bold;
-
-}
-
-.nav-item {
-    padding-left: 50px;
-}
-
-.base-logo {
-    vertical-align: text-top;
-    width: 20px;
-}
-
-#profile-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center {
-    display: flex;
-    margin: 0 auto;
-}
-
-.center.resize {
-    width: auto;
-    /* you can use % */
-    height: auto;
-}
-
-#main-photo {
-    margin: 20px;
-    border-radius: 50%;
-    border: 5px solid #91c8fe;
-    box-shadow: #000000 4px 4px 8px;
 }
 
 .experience-entry {
     padding: 2em;
     background-color: #dde7fd;
     box-shadow: 4px 4px 8px #32456f;
-}
-
-.info {
-    color: rgb(91, 91, 91);
-    font-size: 0.8em;
-    text-align: end;
 }
 
 .aligned-image {
@@ -165,6 +239,5 @@ body {
 
 .home-buttons {
     margin-bottom: 1em;
-    /* margin-left: .5em; */
     width: 100%;
 }
