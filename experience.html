@@ -4,91 +4,225 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCYUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="base.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/breadcrumbs/">
     <title>DaniCassani</title>
+    <style>
+        body {
+            background: radial-gradient(circle at top, #f1f5f9, #e2e8f0 60%, #cbd5f5);
+            min-height: 100vh;
+        }
+
+        #main-title {
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+
+        .experience-intro {
+            max-width: 680px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 28px;
+            bottom: 0;
+            width: 4px;
+            border-radius: 12px;
+            background: linear-gradient(180deg, rgba(79, 70, 229, 0.45), rgba(14, 165, 233, 0.35));
+        }
+
+        .timeline-card {
+            position: relative;
+            border-radius: 1.25rem;
+            overflow: hidden;
+        }
+
+        .timeline-card::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -42px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #fff;
+            border: 4px solid rgba(79, 70, 229, 0.4);
+            box-shadow: 0 0 0 6px rgba(79, 70, 229, 0.1);
+        }
+
+        .company-badge {
+            width: 72px;
+            height: 72px;
+            border-radius: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(15, 23, 42, 0.04);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6);
+        }
+
+        .company-badge img {
+            max-width: 60px;
+            max-height: 60px;
+        }
+
+        .timeline-card h2 {
+            font-weight: 600;
+        }
+
+        .timeline-card h6 {
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .timeline-card ul {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 992px) {
+            .timeline {
+                padding-left: 3.5rem;
+            }
+
+            .timeline::before {
+                left: 46px;
+            }
+
+            .timeline-card::before {
+                left: -24px;
+            }
+        }
+    </style>
 </head>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" id="dev-name" href="index.html"><img src="favicon.ico" style="vertical-align:sub;" height="25"> DaniCassani</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link nav-thing" aria-current="page" href="index.html">Home</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link nav-thing active" href="experience.html">Experience</a>
-                </li>
-                
-                <li class="nav-item">
-                        <a href="#" title="LinkedIn" class="nav-link nav-thing btn-linkedin btn-lg"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link nav-thing" href="CV_DanielDuranCassani.pdf" target="_blank">Resume</a>
-                </li>
-            </ul>
-            <span class="navbar-text" style="font-style: italic;">
-            Engineer
-            </span>
-        </div>
-    </div>
-</nav>
-
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" id="dev-name" href="index.html">
+                <img src="favicon.ico" style="vertical-align:sub;" height="25" alt="DaniCassani logo"> DaniCassani
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <h1 id="main-title">Experience</h1>
-    <hr class="my-4">
-    <div class="container my-4 experience-entry">
-        <div class="row">
-            <div class="col-md-3">
-                <img src="images/indra_logo.jpg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col-md-9">
-                <h2>Engineer</h2>
-                <h6>Indra Sistemas, Madrid [Nov 2022 - Present]</h6>
-                <ul>
-                    <li>Developed safety new offer solutions with the innovation's Software Department using C++, Python and Django.</li>
-                    <li>Deployed solutions on remote machines.</li>
-                    <li>Designed and implemented database models.</li>
-                    <li>Refactored code to make it cleaner, scalable and esier to maintain.</li>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-thing" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-thing active" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" title="LinkedIn" class="nav-link nav-thing btn-linkedin btn-lg">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-thing" href="CV_DanielDuranCassani.pdf" target="_blank">Resume</a>
+                    </li>
                 </ul>
+                <span class="navbar-text" style="font-style: italic;">
+                    Engineer
+                </span>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <hr class="my-4">
-
-    <div class="container my-4 experience-entry">
-        <div class="row">
-            <div class="col-md-3">
-                <img src="images/endesa_logo.png" alt="Image" class="img-fluid">
+    <main class="py-5">
+        <section class="container">
+            <div class="text-center mb-5">
+                <h1 id="main-title" class="display-5 text-dark">Experience</h1>
+                <p class="text-muted experience-intro mx-auto">
+                    Roles and projects where I have grown as an engineer building reliable and scalable technological solutions.
+                </p>
             </div>
-            <div class="col-md-9">
-                <h2>Technical Management Internship</h2>
-                <h6>Endesa, Málaga [Oct 2021 - Oct 2022]</h6>
-                <ul>
-                    <li>I managed and certified the periodic revisions of the aerial medium voltage networks.</li>
-                    <li>Earned basic team working skills.</li>
-                </ul>
-            </div>
-        </div>
 
+            <div class="timeline">
+                <article class="card timeline-card border-0 shadow-sm bg-white mb-4">
+                    <div class="card-body p-4 p-lg-5">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-md-3 text-md-center">
+                                <div class="company-badge mx-md-auto">
+                                    <img src="images/alten_logo.svg" alt="ALTEN logo" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <h2 class="h4 mb-1">Engineer</h2>
+                                <h6 class="text-secondary mb-3">ALTEN, Madrid — Feb 2025 · Present</h6>
+                                <ul class="list-unstyled text-muted small">
+                                    <li class="mb-2">Leading the continued evolution of safety-critical solutions with a pure C++ stack.</li>
+                                    <li class="mb-2">Designing high-performance modules and integrating them with Indra-originated services.</li>
+                                    <li class="mb-2">Driving quality through rigorous code reviews, automated tests and incremental delivery.</li>
+                                    <li>Partnering with cross-functional experts to ensure seamless product knowledge transfer.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card timeline-card border-0 shadow-sm bg-white mb-4">
+                    <div class="card-body p-4 p-lg-5">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-md-3 text-md-center">
+                                <div class="company-badge mx-md-auto">
+                                    <img src="images/indra_logo.jpg" alt="Indra logo" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <h2 class="h4 mb-1">Engineer</h2>
+                                <h6 class="text-secondary mb-3">Indra Sistemas, Madrid — Nov 2022 · Feb 2025</h6>
+                                <ul class="list-unstyled text-muted small">
+                                    <li class="mb-2">Delivered safety-oriented software solutions with C++, Python and Django.</li>
+                                    <li class="mb-2">Automated deployments to remote environments to ensure stable roll-outs.</li>
+                                    <li class="mb-2">Modeled and maintained relational databases supporting operational needs.</li>
+                                    <li>Refactored legacy components for improved scalability and maintainability.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card timeline-card border-0 shadow-sm bg-white mb-4">
+                    <div class="card-body p-4 p-lg-5">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-md-3 text-md-center">
+                                <div class="company-badge mx-md-auto">
+                                    <img src="images/endesa_logo.png" alt="Endesa logo" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <h2 class="h4 mb-1">Technical Management Internship</h2>
+                                <h6 class="text-secondary mb-3">Endesa, Málaga — Oct 2021 · Oct 2022</h6>
+                                <ul class="list-unstyled text-muted small">
+                                    <li class="mb-2">Managed and certified the periodic revisions of aerial medium voltage networks.</li>
+                                    <li>Strengthened collaboration skills by working closely with multidisciplinary teams.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-q2nyl9+0n0zqP0C0BpvyEuk+qS0bkkCm1cW0XOxOyADVY6z3KF1u9IiMaTZGi4mB" crossorigin="anonymous"></script>
 </body>
 </html>
